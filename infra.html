@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>JKKNPS  SUPERMARKET</h1>
+    <h2>A WORLD OF GROCERIES<h2>
+  </div>
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="infra.html">LOGIN</a>
+    <a href="admission.html">PRODUCT DETAILS</a>
+    <a href="rules.html">CUSTOMER DETAILS</a>
+    <a href="hostelcouncil.html">PAYMENT DETAILS</a>
+  </div>
+  <div class="row">
+    <div class="side"></div>
+    <div class="main"></div>
+  </div>
+  <?php
+    require 'connection.php';
+
+ session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style for product.css" >
+ </head>
+  <body>
+<form action="cart_add.php" method="post">
+  <div>
+    <?php
+   require 'header.php';
+    ?>
+  <div class="container">
+<div class="row">
+<div class="col-xs-6 col-xs-offset-3">
+<h2>ENTER THE EMPLOYEE DETAILS</h2>
+<div class="row">
+<center>
+<form>
+<label>Enter the employee ID</label><br>
+<input type='number' class="form-control"><br>
+<label>Enter the Employee Name</label><br>
+<input type='text' class="form-control"><br>
+<label>Gender</label><br>
+<input type='radio' value="male">
+<label>Male</label><br>
+<input type='radio' value="female">
+<label>Female</label><br>
+<label>Enter the Hire date</label><br>
+<input type='date' class="form-control"><br>
+<label>Enter the Address</label><br>
+<input type='text' class="form-control"><br>
+<label>Enter the Position</label><br>
+<input type='text' class="form-control"><br>
+<lable>Enter the Phone number</label><br>
+<input type='Phone' class="form-control"><br><br>
+</center>
+</form>
+  </div>
+ <div class="panel-body">
+<div class="form-group">
+<center>
+<input type="submit" value="Login" class="btn btn-primary"><br>
+</center>
+ </div>
+</html>
+</body>
+</html>

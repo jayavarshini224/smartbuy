@@ -1,0 +1,119 @@
+.header {
+  padding: 10px; /* some padding */
+  text-align: center; /* center the text */
+  background: #8B008B; /* green background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 35px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: Black; /* Black text color */
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+
+h2{
+  text-align: center;
+}
+
+.home{
+  border: 0 auto;
+  text-align: center;
+}
+
+.home h1{
+  text-align: center;
+}
+
+.row{
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+.row tbody>tr>:nth-child(2){
+  padding-left: 10px;
+}
+
+.colspan{
+  text-align: center;
+  background-color: gray;
+}
+
+.main0 h1{
+  text-align: center;
+}
+
+.main0 p{
+  text-align: justify;
+}
+
+.main1 ul{
+  list-style-type: circle;
+}
+
+.main1 button{
+  background: none;
+  color: blue;
+  border: none;
+  padding: none;
+  text-align: center;
+  font-size: 100%;
+}
+
+.main1 div{
+  display: none;
+  text-align: justify;
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

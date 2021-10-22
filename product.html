@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>JKKNPS SUPERMARKET</h1>
+    <h2>A WORLD OF GROCERIES</h2>
+  </div>
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="infra.html">LOGIN</a>
+    <a href="admission.html">PRODUCT DETAILS</a>
+    <a href="rules.html"> CUSTOMER DETAILS</a>
+    <a href="hostelcouncil.html">PAYMENT DETAILS</a>
+  </div>
+  <?php
+    require 'connection.php';
+
+ session_start();
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <link rel="shortcut icon" href="img/lifestyleStore.png" />
+  </head>
+    <body>
+   <div>
+  <?php
+      require 'header.php';
+            ?>
+  <br><br>
+ <div class="container">
+       <div class="row">
+       <div class="col-xs-4 col-xs-offset-4">
+         <center>
+              <h1><b>PRODUCT DETAILS</b></h1>
+        </center>
+    <form method="post" action="user_registration_script.php">
+                      <div class="form-group">
+                        <center>
+                 <input type="number" class="form-control" productid="name" placeholder="Product_id" required="true">
+ <br><br>
+<input type="text" class="form-control" Category="Category" placeholder="Category" required="true">
+<br><br>
+<input type="text" class="form-control" Brand="Brand" placeholder="Brand" required="true">
+ <br><br>
+<input type="number" class="form-control" Price="Price" placeholder="Price" required="true">
+ <br><br>
+<input type="text" class="form-control" Description="Description" placeholder="Description" required="true">
+ <br><br>
+<input type="number" class="form-control" Empid="Empid" placeholder="Empid" required="true">
+<br><br>
+<input type="text" class="form-control" Address="Address" placeholder="Address" required="true"> <br><br>
+</center>
+   </div>
+  <div class="form-group">
+    </div>
+  <div class="form-group">
+<center>
+   <input type="submit" class="btn btn-primary" value="Submit">
+</center>
+                      </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+           <footer class="footer">
+               <div class="container">
+               </div>
+           </footer>
+        </div>
+    </body>
+</html>
+
+</body>
+
+</html>
